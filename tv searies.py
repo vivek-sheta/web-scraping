@@ -24,7 +24,7 @@ def get_data(obj):
             continue
         ratting.append(name.find('strong').get_text().strip())
     
-def change_page():
+def change_page(): 
     first_page = requests.get("https://www.imdb.com/search/title/?title_type=tv_series,tv_miniseries&genres=fantasy&explore=genres&ref_=adv_prv")
     soup = BeautifulSoup(first_page.content,'html.parser')
     content = soup.find_all(class_="lister-item-content")
