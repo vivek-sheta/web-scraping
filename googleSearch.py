@@ -11,4 +11,3 @@ user_agent = "Chrome/81.0.4044.129 Safari/537.36"
 request_search_page = requests.get(string)
 
 webbrowser.open(string)
-#print(soup.prettify())
